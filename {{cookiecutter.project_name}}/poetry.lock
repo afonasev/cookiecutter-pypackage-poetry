@@ -19,6 +19,10 @@ lazy-object-proxy = "*"
 six = "*"
 wrapt = "*"
 
+[package.dependencies.typed-ast]
+python = "<3.7"
+version = "*"
+
 [[package]]
 category = "dev"
 description = "Atomic file writes."
@@ -419,8 +423,8 @@ python-versions = "*"
 version = "1.11.1"
 
 [metadata]
-content-hash = "15bccbe05749f9d396de805e4784c6eb8483ee2ec6e87722b8719ad467af52ac"
-python-versions = "^3.7"
+content-hash = "478f0077889b07e556904435a5886065e2de724245e6f8c205ff4272854a1383"
+python-versions = "^3.6"
 
 [metadata.hashes]
 appdirs = ["9e5896d1372858f8dd3344faf4e5014d21849c756c8d5701f78f8a103b372d92", "d8b24664561d0d34ddfaec54636d502d7cea6e29c3eaf68f3df6180863e2166e"]

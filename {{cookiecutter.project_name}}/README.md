@@ -1,5 +1,6 @@
 # {{cookiecutter.project_name}}
 
+[![Build Status](https://travis-ci.org/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}.svg?branch=master)](https://travis-ci.org/{{cookiecutter.github_username}}/{{cookiecutter.project_name}})
 ![Python: 3.5 | 3.6 | 3.7 | 3.8](https://img.shields.io/badge/Python-3.5|3.6|3.7|3.8-blue.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Code style: black](https://img.shields.io/badge/Style-Black-lightgrey.svg)

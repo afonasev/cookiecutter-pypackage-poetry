@@ -1,14 +1,11 @@
 language: python
 
 python:
-  - "3.5-dev"
-  - "3.6-dev"
-  - "3.7-dev"
-  - "3.8-dev"
-  - "pypy3.5"
+  - "3.6"
 
 install:
   - pip install poetry
-  - poetry install --dev
+  - poetry install
 
-script: make lint test
+script:
+  - make lint test
