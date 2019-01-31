@@ -19,7 +19,7 @@ github_username []: vp_username
 ```bash
 $ python -m venv .venv
 $ source .venv/bin/activate
-$ poetry install --dev
+$ poetry install
 ```
 
 ### Run autoformat
