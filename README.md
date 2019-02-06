@@ -1,13 +1,13 @@
-# package_template
+# cookiecutter-pypackage-poetry
 
-Cookicutter python package template with travis, poetry, linters, black etc.
+Cookicutter python package template with poetry, travis, etc.
 
 ## Usage
 
 ### Create project
 
 ```bash
-$ cookiecutter gh/Afonasev/package_template
+$ cookiecutter gh/Afonasev/cookiecutter-pypackage-poetry
 project_name []: my_project
 full_name []: Vasiliy Petrov
 email []: vp@gmail.com
@@ -16,11 +16,7 @@ github_username []: vp_username
 
 ### Create virtualenv and install requirements
 
-```bash
-$ python -m venv .venv
-$ source .venv/bin/activate
-$ poetry install
-```
+    make init
 
 ### Run autoformat
 
@@ -33,3 +29,7 @@ $ poetry install
 ### Run tests
 
     make test
+
+### Add precommit hook
+
+    make precommit_install

@@ -1,16 +1,22 @@
-.PHONY: test lint pretty
-
+BIN = ./.venv/bin/
 CODE = {{cookiecutter.project_name}}
 
+init:
+	python3 -m venv .venv
+	poetry install
+
 test:
-	pytest -vv --cov=$(CODE) $(args)
+	$(BIN)/pytest -vv --cov=$(CODE) $(args)
 
 lint:
-	flake8 --jobs 4 --statistics $(CODE) tests
-	pylint --jobs 4 --rcfile=setup.cfg $(CODE)
-	black --py36 --skip-string-normalization --line-length=79 --check $(CODE) tests
+	$(BIN)/flake8 --jobs 4 --statistics $(CODE) tests
+	$(BIN)/pylint --jobs 4 --rcfile=setup.cfg $(CODE)
+	$(BIN)/black --py36 --skip-string-normalization --line-length=79 --check $(CODE) tests
 
 pretty:
-	isort --apply --recursive $(CODE) tests
-	black --py36 --skip-string-normalization --line-length=79 $(CODE) tests
-	unify --in-place --recursive $(CODE) tests
+	$(BIN)/isort --apply --recursive $(CODE) tests
+	$(BIN)/black --py36 --skip-string-normalization --line-length=79 $(CODE) tests
+	$(BIN)/unify --in-place --recursive $(CODE) tests
+
+precommit_install:
+	echo '#!/bin/sh\nmake lint test\n' > .git/hooks/pre-commit
