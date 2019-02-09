@@ -6,7 +6,7 @@ authors = ["{{cookiecutter.full_name}} <{{cookiecutter.email}}>"]
 license = "MIT"
 readme = 'README.md'
 repository = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}"
-homepage = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}"
+homepage = "https://pypi.org/project/{{cookiecutter.project_name}}"
 keywords = []
 
 [tool.poetry.dependencies]
