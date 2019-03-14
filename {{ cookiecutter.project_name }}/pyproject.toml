@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "{{cookiecutter.project_name}}"
+name = "{{ cookiecutter.project_name }}"
 version = "0.1.0"
 description = ""
-authors = ["{{cookiecutter.full_name}} <{{cookiecutter.email}}>"]
+authors = ["{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>"]
 license = "MIT"
 readme = 'README.md'
 repository = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}"
@@ -14,6 +14,7 @@ python = "^3.6"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^18.3-alpha.0",allows-prereleases = true}
+bumpversion = "^0.5.3"
 flake8-awesome = ">=0.2.0"
 mypy = "^0.660.0"
 pylint = "^2.2"
@@ -21,6 +22,7 @@ pytest = "^3.0"
 pytest-cov = "^2.6"
 pytest-deadfixtures = "^2.1"
 pytest-mock = "^1.10"
+safety = "^1.8"
 unify = "^0.4.0"
 
 [build-system]

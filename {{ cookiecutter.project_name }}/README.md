@@ -1,4 +1,4 @@
-# {{cookiecutter.project_name}}
+# {{ cookiecutter.project_name }}
 
 [![pypi](https://badge.fury.io/py/{{cookiecutter.project_name}}.svg)](https://pypi.org/project/{{cookiecutter.project_name}})
 [![Python: 3.6+](https://img.shields.io/badge/Python-3.6+-blue.svg)](https://pypi.org/project/{{cookiecutter.project_name}})
@@ -13,17 +13,7 @@ Description
 ## Installation
 
 ```bash
-pip install {{cookiecutter.project_name}}
-```
-
-## Example
-
-```python
-def sum(x, y):
-    return x * y
-
->>> sum(2, 3)
-5
+pip install {{ cookiecutter.project_name }}
 ```
 
 ## License
@@ -32,6 +22,6 @@ MIT
 
 ## Change Log
 
-### 0.1.0
+### Unreleased
 
 * initial

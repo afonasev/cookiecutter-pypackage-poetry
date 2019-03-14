@@ -1,5 +1,5 @@
 BIN = .venv/bin/
-CODE = {{cookiecutter.project_slug}}
+CODE = {{ cookiecutter.project_slug }}
 
 init:
 	python3 -m venv .venv
@@ -14,6 +14,7 @@ lint:
 	$(BIN)mypy $(CODE) tests
 	$(BIN)black --py36 --skip-string-normalization --line-length=79 --check $(CODE) tests
 	$(BIN)pytest --dead-fixtures --dup-fixtures
+	$(BIN)safety check --bare --full-report
 
 pretty:
 	$(BIN)isort --apply --recursive $(CODE) tests
@@ -21,23 +22,6 @@ pretty:
 	$(BIN)unify --in-place --recursive $(CODE) tests
 
 precommit_install:
+	git init
 	echo '#!/bin/sh\nmake lint test\n' > .git/hooks/pre-commit
 	chmod +x .git/hooks/pre-commit
-
-publish:
-ifeq ($(version),)
-	$(error `version` argument missing! (example: make publish version='0.1.0'))
-else
-	poetry update
-	make lint test
-	poetry version $(version)
-	poetry build
-	poetry publish
-	git add pyproject.toml
-	git commit -m "release $(version)"
-	git tag -a $(version)
-	git push origin master --tags
-endif
-
-ci: BIN =
-ci: lint test

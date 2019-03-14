@@ -1,7 +1,8 @@
 {
+    "project_name": "",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "full_name": "",
     "email": "",
     "github_username": "",
-    "project_name": "",
-    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}"
+    "use_travis": ["yes", "no"]
 }

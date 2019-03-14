@@ -1,7 +1,6 @@
-* Date you used {{cookiecutter.project_name}}:
-* {{cookiecutter.project_name}} version used, if any:
-* Python version, if any:
 * Operating System:
+* Python version:
+* {{ cookiecutter.project_name }} version used:
 
 ### Description
 
