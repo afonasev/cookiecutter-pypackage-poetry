@@ -8,7 +8,7 @@ remove_resources = {
 }
 
 
-def remove_resource(resources: List[str]):
+def remove_resource(resources):
     for resource in resources:
         if os.path.isfile(resource):
             os.remove(resource)
