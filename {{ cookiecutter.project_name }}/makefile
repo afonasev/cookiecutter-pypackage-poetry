@@ -1,3 +1,5 @@
+.PHONY: init test lint pretty precommit_install
+
 BIN = .venv/bin/
 CODE = {{ cookiecutter.project_slug }}
 
@@ -6,7 +8,7 @@ init:
 	poetry install
 
 test:
-	$(BIN)pytest --verbosity=2 --showlocals --strict --cov=$(CODE) $(args)
+	$(BIN)pytest --verbosity=2 --showlocals --strict --cov=$(CODE) -k "$(k)"
 
 lint:
 	$(BIN)flake8 --jobs 4 --statistics --show-source $(CODE) tests
@@ -14,7 +16,6 @@ lint:
 	$(BIN)mypy $(CODE) tests
 	$(BIN)black --py36 --skip-string-normalization --line-length=79 --check $(CODE) tests
 	$(BIN)pytest --dead-fixtures --dup-fixtures
-	$(BIN)safety check --bare --full-report
 
 pretty:
 	$(BIN)isort --apply --recursive $(CODE) tests
@@ -22,6 +23,5 @@ pretty:
 	$(BIN)unify --in-place --recursive $(CODE) tests
 
 precommit_install:
-	git init
 	echo '#!/bin/sh\nmake lint test\n' > .git/hooks/pre-commit
 	chmod +x .git/hooks/pre-commit
