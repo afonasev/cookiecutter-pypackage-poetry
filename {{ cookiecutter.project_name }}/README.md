@@ -8,13 +8,37 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://en.wikipedia.org/wiki/MIT_License)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
-Description
+## Description
+
+...
 
 ## Installation
 
-```bash
-pip install {{ cookiecutter.project_name }}
-```
+    pip install {{ cookiecutter.project_name }}
+
+## Usage
+
+...
+
+## For developers
+
+### Create venv and install deps
+
+    make init
+
+### Install git precommit hook
+
+    make precommit_install
+
+### Run linters, autoformat, tests etc.
+
+    make pretty lint test
+
+### Bump new version
+
+    make bump_major
+    make bump_minor
+    make bump_patch
 
 ## License
 

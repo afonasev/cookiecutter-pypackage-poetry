@@ -1,6 +1,6 @@
 # cookiecutter-pypackage-poetry
 
-Cookicutter python package template with poetry, travis, etc.
+The cookicutter template of a python package with poetry, travis, etc.
 
 ## Usage
 
@@ -9,27 +9,29 @@ Cookicutter python package template with poetry, travis, etc.
 ```bash
 $ cookiecutter gh/Afonasev/cookiecutter-pypackage-poetry
 project_name []: my_project
-full_name []: Vasiliy Petrov
-email []: vp@gmail.com
-github_username []: vp_username
+full_name []: John Doe
+email []: john_doe@gmail.com
+github_username []: john_doe
+Select use_travis:
+1 - yes
+2 - no
+Choose from 1, 2 (1, 2) [1]: 1
 ```
 
-### Create virtualenv and install requirements
+### Create venv and install deps
 
     make init
 
-### Run autoformat
-
-    make pretty
-
-### Run linters
-
-    make lint
-
-### Run tests
-
-    make test
-
-### Add precommit hook
+### Install git precommit hook
 
     make precommit_install
+
+### Run linters, autoformat, tests etc.
+
+    make pretty lint test
+
+### Bump new version
+
+    make bump_major
+    make bump_minor
+    make bump_patch
