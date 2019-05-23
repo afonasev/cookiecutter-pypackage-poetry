@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "example"
 version = "0.0.0"
-description = ""
+description = "My example project"
 authors = ["Afonasev Evgeniy <ea.afonasev@gmail.com>"]
 license = "MIT"
 readme = 'README.md'

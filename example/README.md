@@ -10,7 +10,7 @@
 
 ## Description
 
-...
+My example project
 
 ## Installation
 

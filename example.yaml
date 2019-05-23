@@ -1,5 +1,6 @@
 default_context:
   project_name: "example"
+  description: "My example project"
   full_name: "Afonasev Evgeniy"
   email: "ea.afonasev@gmail.com"
   github_username: "Afonasev"

@@ -10,7 +10,7 @@
 
 ## Description
 
-...
+{{ cookiecutter.description }}
 
 ## Installation
 
