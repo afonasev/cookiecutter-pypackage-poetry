@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "{{ cookiecutter.project_name }}"
+name = "example"
 version = "0.0.0"
 description = ""
-authors = ["{{ cookiecutter.full_name }} <{{ cookiecutter.email }}>"]
+authors = ["Afonasev Evgeniy <ea.afonasev@gmail.com>"]
 license = "MIT"
 readme = 'README.md'
-repository = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}"
-homepage = "https://pypi.org/project/{{cookiecutter.project_name}}"
+repository = "https://github.com/Afonasev/example"
+homepage = "https://pypi.org/project/example"
 keywords = []
 
 [tool.poetry.dependencies]

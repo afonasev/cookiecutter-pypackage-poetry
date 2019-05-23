@@ -1,0 +1,6 @@
+default_context:
+  project_name: "example"
+  full_name: "Afonasev Evgeniy"
+  email: "ea.afonasev@gmail.com"
+  github_username: "Afonasev"
+  use_travis: "yes"

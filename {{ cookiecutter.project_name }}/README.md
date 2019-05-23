@@ -46,6 +46,7 @@ MIT
 
 ## Change Log
 
-### Unreleased
+Unreleased
+-----
 
 * initial

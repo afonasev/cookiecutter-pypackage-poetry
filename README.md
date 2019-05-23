@@ -18,14 +18,6 @@ Select use_travis:
 Choose from 1, 2 (1, 2) [1]: 1
 ```
 
-### Create venv and install deps
-
-    make init
-
-### Install git precommit hook
-
-    make precommit_install
-
 ### Run linters, autoformat, tests etc.
 
     make pretty lint test
