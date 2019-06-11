@@ -8,7 +8,7 @@ init:
 	poetry install
 
 test:
-	$(BIN)pytest --verbosity=2 --showlocals --strict --cov=$(CODE) -k "$(k)"
+	$(BIN)pytest --verbosity=2 --showlocals --strict --cov=$(CODE) $(args)
 
 lint:
 	$(BIN)flake8 --jobs 4 --statistics --show-source $(CODE) tests
