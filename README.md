@@ -7,7 +7,7 @@ The cookicutter template of a python package with poetry, travis, etc.
 ### Create project
 
 ```bash
-$ cookiecutter gh/Afonasev/cookiecutter-pypackage-poetry
+$ cookiecutter https://github.com/Afonasev/cookiecutter-pypackage-poetry
 project_name []: my_project
 full_name []: John Doe
 email []: john_doe@gmail.com
