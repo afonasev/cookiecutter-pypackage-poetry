@@ -18,7 +18,7 @@ def remove_resource(resources):
 
 def main():
     if "{{ cookiecutter.use_travis }}".lower() not in ('yes', 'y'):
-        remove_resource(remove_resources['travis'])
+        remove_resource(remove_resources['use_travis'])
 
 
 if __name__ == '__main__':
