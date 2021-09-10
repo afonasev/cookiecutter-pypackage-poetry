@@ -2,9 +2,12 @@ import os
 import shutil
 
 remove_resources = {
-    'use_travis': [
+    'travis': [
         '.travis.yml',
     ],
+    'github_actions': [
+        '.github/workflows',
+    ]
 }
 
 
@@ -19,6 +22,9 @@ def remove_resource(resources):
 def main():
     if "{{ cookiecutter.use_travis }}".lower() not in ('yes', 'y'):
         remove_resource(remove_resources['travis'])
+
+    if "{{ cookiecutter.use_github_actions }}".lower() not in ('yes', 'y'):
+        remove_resource(remove_resources['github_actions'])
 
 
 if __name__ == '__main__':

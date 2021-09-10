@@ -12,11 +12,18 @@ project_name []: my_project
 full_name []: John Doe
 email []: john_doe@gmail.com
 github_username []: john_doe
-Select use_travis:
-1 - yes
-2 - no
-Choose from 1, 2 (1, 2) [1]: 1
+...
 ```
+
+## In project directory
+
+### Show help
+
+    make help
+
+### Create venv and install deps
+
+    make init
 
 ### Run linters, autoformat, tests etc.
 
@@ -27,3 +34,7 @@ Choose from 1, 2 (1, 2) [1]: 1
     make bump_major
     make bump_minor
     make bump_patch
+
+### Install git precommit hook
+
+    make precommit

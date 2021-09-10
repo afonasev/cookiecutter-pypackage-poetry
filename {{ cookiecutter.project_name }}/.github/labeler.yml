@@ -1,0 +1,15 @@
+config:
+  - "setup.cfg"
+  - "Makefile"
+
+enhancement:
+  - "{{ cookiecutter.project_slug }}/*"
+
+tests:
+  - "tests/*"
+
+documentation:
+  - "README.md"
+
+dependencies:
+  - "poetry.lock"

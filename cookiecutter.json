@@ -5,5 +5,6 @@
     "full_name": "",
     "email": "",
     "github_username": "",
-    "use_travis": ["yes", "no"]
+    "python_version": "3.9",
+    "ci": ["travis", "github", ""]
 }

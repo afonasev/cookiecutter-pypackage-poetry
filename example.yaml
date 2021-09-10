@@ -4,4 +4,5 @@ default_context:
   full_name: "Afonasev Evgeniy"
   email: "ea.afonasev@gmail.com"
   github_username: "Afonasev"
-  use_travis: "yes"
+  python_version: 3.9
+  ci: "github"
