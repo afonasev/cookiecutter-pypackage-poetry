@@ -22,13 +22,17 @@ My example project
 
 ## For developers
 
+### Show help
+
+    make help
+
 ### Create venv and install deps
 
     make init
 
 ### Install git precommit hook
 
-    make precommit_install
+    make precommit
 
 ### Run linters, autoformat, tests etc.
 
@@ -40,13 +44,6 @@ My example project
     make bump_minor
     make bump_patch
 
-## License
+## Credits
 
-MIT
-
-## Change Log
-
-Unreleased
------
-
-* initial
+This package was created with [afonasev/cookiecutter-pypackage-poetry](https://github.com/afonasev/cookiecutter-pypackage-poetry) project template.

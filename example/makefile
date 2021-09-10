@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 
 BIN = .venv/bin/
-CODE = {{ cookiecutter.project_slug }}
+CODE = example
 
 .PHONY: init ## init python venv and install deps
 init:
@@ -48,4 +48,4 @@ help:
 	@grep -E \
 		'^.PHONY: .*?## .*$$' $(MAKEFILE_LIST) | \
 		sort | \
-		awk
+		awk 'BEGIN {FS = ".PHONY: |## "}; {printf "\033[36m%-16s\033[0m %s\n", $$2, $$3}'

@@ -1,0 +1,15 @@
+config:
+  - "setup.cfg"
+  - "Makefile"
+
+enhancement:
+  - "example/*"
+
+tests:
+  - "tests/*"
+
+documentation:
+  - "README.md"
+
+dependencies:
+  - "poetry.lock"
